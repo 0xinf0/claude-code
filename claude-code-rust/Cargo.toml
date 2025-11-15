@@ -64,3 +64,8 @@ opt-level = 3
 lto = true
 codegen-units = 1
 strip = true
+
+# Compatibility patch for Rust versions < 1.88
+# Users with Rust 1.88+ can remove this section
+[patch.crates-io]
+home = { version = "=0.5.9" }
